@@ -13,7 +13,7 @@ pipeline{
        }
        stage('Git Checkout'){
           steps{
-             
+             sh 'rm -Rf testecit/'
              sh 'git clone https://github.com/professorisidro/testecit.git'
           }
        }
